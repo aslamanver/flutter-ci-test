@@ -1,6 +1,6 @@
 os:
   - linux
-sudo: false
+sudo: true
 
 env:
   - ANDROID_COMPILE_SDK="28"
