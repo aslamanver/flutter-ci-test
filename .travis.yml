@@ -13,6 +13,7 @@ before_script:
   - ./flutter/bin/flutter doctor
 script:
   - ./flutter/bin/flutter clean
+  - ./flutter/bin/flutter get
   - ./flutter/bin/flutter build apk
 cache:
   directories:
