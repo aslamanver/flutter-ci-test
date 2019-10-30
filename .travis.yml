@@ -15,6 +15,11 @@
 #   directories:
 #     - $HOME/.pub-cache
 
+os:
+  - linux
+  
+sudo: true
+
 image: openjdk:8-jdk
 
 variables:
