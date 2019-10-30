@@ -37,7 +37,7 @@ before_script:
   - ./flutter/bin/flutter packages get
 script:
   - ./flutter/bin/flutter doctor
-  - cd example && ./flutter/bin/flutter build apk --split-per-abi
+  - ./flutter/bin/flutter build apk --split-per-abi
   # - ./android/.gradlew build
   # - ./gradlew build jacocoTestReport assembleAndroidTest
   # - echo no | android create avd --force -n test -t $ANDROID_TARGET --abi $ANDROID_ABI
