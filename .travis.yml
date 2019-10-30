@@ -38,6 +38,7 @@ before_script:
   - git clone https://github.com/flutter/flutter.git -b stable --depth 1
   - export PATH="$(pwd)/flutter/bin":$PATH
   - flutter doctor
+  - flutter upgrade
   - flutter packages get
 script:
   - flutter doctor
