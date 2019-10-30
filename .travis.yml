@@ -33,6 +33,7 @@ android:
   - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
 before_script:
   - yes | sdkmanager "platforms;android-29"
+  - yes | sdkmanager "platforms;android-28"
   - cd example
   - git clone https://github.com/flutter/flutter.git -b stable --depth 1
   - export PATH="$(pwd)/flutter/bin":$PATH
