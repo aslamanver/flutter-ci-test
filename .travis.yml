@@ -50,6 +50,7 @@ script:
   # - adb shell setprop dalvik.vm.dexopt-flags v=n,o=v
   # - ./gradlew connectedCheck
 after_success:
+  - cd ../
   - bash <(curl -s https://codecov.io/bash)
 before_cache:
 - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
