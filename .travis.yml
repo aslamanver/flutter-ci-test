@@ -32,11 +32,13 @@ android:
   - $ANDROID_TARGET
   - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
 before_script:
+  - cd example
   - git clone https://github.com/flutter/flutter.git -b stable --depth 1
   - ./flutter/bin/flutter doctor
   - ./flutter/bin/flutter packages get
 script:
   - ./flutter/bin/flutter doctor
+  - cd exa
   - ./flutter/bin/flutter build apk --split-per-abi
   # - ./android/.gradlew build
   # - ./gradlew build jacocoTestReport assembleAndroidTest
