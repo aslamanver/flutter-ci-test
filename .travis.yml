@@ -48,7 +48,7 @@ script:
   - flutter doctor
   - flutter build apk
   - cd android
-  - ./gradlew build jacocoTestReport assembleAndroidTest
+  # - ./gradlew build jacocoTestReport assembleAndroidTest
   - echo no | android create avd --force -n test -t android-22 --abi $ANDROID_ABI
   - emulator -avd test -no-skin -no-audio -no-window &
   - android-wait-for-emulator
