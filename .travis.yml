@@ -24,10 +24,10 @@ before_script:
   - cd example
   - git clone https://github.com/flutter/flutter.git -b stable --depth 1
   - export PATH="$(pwd)/flutter/bin":$PATH
+  - flutter doctor --android-licenses
   - flutter doctor
   - flutter packages get
 script:
-  - flutter doctor
   - flutter build apk
   - cd android
   # - ./gradlew build jacocoTestReport assembleAndroidTest
